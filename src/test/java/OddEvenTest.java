@@ -26,16 +26,7 @@ public class OddEvenTest {
     }
 
 
-    @Test
-    public void testNegativeIntegerNumber_HappyPath() {
-        int number = -345;
-        String expectedResult = "Odd";
 
-        String actualResult = new OddEven().oddEven(number);
-
-        Assert.assertEquals(actualResult, expectedResult);
-
-    }
 
 
 }
