@@ -25,5 +25,25 @@ public class SumArrayTest {
 
     }
 
+    @Test
+    public void testSumOf_0length_OfArray_NegativePath() {
+        int[] array = {};
+        int expectedResult = 0;
+
+        int actualResult = new SumArray().sumArray(array);
+        Assert.assertEquals(actualResult, expectedResult);
+
+    }
+
+    @Test
+    public void testSumOf_Null_Array_NegativePath() {
+        int[] array = {};
+        int expectedResult = 0;
+
+        int actualResult = new SumArray().sumArray(array);
+        Assert.assertEquals(actualResult, expectedResult);
+
+    }
+
 
 }

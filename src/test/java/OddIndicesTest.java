@@ -16,8 +16,18 @@ public class OddIndicesTest {
 
 
     @Test
-    public void testNegativePrintOddIndexesFromArray() {
+    public void testNegativePrint_Input_0() {
         int [] array = {};
+        int [] expectedResult = {};
+
+        int [] actualResult = new OddIndices().oddIndices(array);
+        Assert.assertEquals(actualResult,expectedResult);
+
+    }
+
+    @Test
+    public void testNegativePrint_Input_Null() {
+        int [] array = null;
         int [] expectedResult = {};
 
         int [] actualResult = new OddIndices().oddIndices(array);
