@@ -52,6 +52,49 @@ public class ManipulationsWithArraysTest {
         Assert.assertEquals(actualResult, expectedResult);
     }
 
+    @Test
+    public void testCreatingIntegerArrayFromDoubleArray_HappyPath() {
+        double[] array = {1.0, 2.2, 3.0, 4.0, 5.1};
+        int[] expectedResult = {1, 2, 3, 4, 5};
+        int[] actualResult = new ManipulationsWithArrays().toIntArray(array);
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+
+    @Test
+    public void testCreatingStringArrayFromIntArray_HappyPath() {
+        int[] array = {1, 2, 3, 4, 5};
+        String[] expectedResult = {"1", "2", "3", "4", "5"};
+        String[] actualResult = new ManipulationsWithArrays().toStringArray(array);
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test
+    public void testCreatingStringArrayFromDoubleArray_HappyPath() {
+        double[] array = {1.2, 2.0, 3.4, 4.1, 5.0};
+        String[] expectedResult = {"1.2", "2.0", "3.4", "4.1", "5.0"};
+        String[] actualResult = new ManipulationsWithArrays().toStringArrayFromDouble(array);
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test
+    public void testArrayValuesAreGreaterThanNumber_HappyPath() {
+        int[] array = {7, 2, 3, 4, 5};
+        int number = 1;
+        boolean expectedResult = true;
+        boolean actualResult = new ManipulationsWithArrays().areValuesGreaterThanNumber(array, number);
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
+    @Test
+    public void testArrayValuesAreNotGreaterThanNumber_HappyPath() {
+        int[] array = {1, 2, 3, 4, 5};
+        int number = 4;
+        boolean expectedResult = false;
+        boolean actualResult = new ManipulationsWithArrays().areValuesGreaterThanNumber(array, number);
+        Assert.assertEquals(actualResult, expectedResult);
+    }
+
 
 
 

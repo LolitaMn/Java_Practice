@@ -2,6 +2,8 @@ package project_utils;
 
 public class Helpers {
 
+
+
     public static boolean checkForEmptyArray(String[] array) {
 
         if(array.length != 0) {
@@ -24,6 +26,17 @@ public class Helpers {
         }
     }
 
+    public static boolean checkForEmptyArray(double[] array) {
+
+        if(array.length != 0) {
+
+            return true;
+        } else {
+
+            return false;
+        }
+    }
+
     public static boolean checkForNullArray(String[] array) {
 
         if(array != null) {
@@ -35,6 +48,17 @@ public class Helpers {
         }
     }
     public static boolean checkForNullArray(int[] array) {
+
+        if(array != null) {
+
+            return true;
+        } else {
+
+            return false;
+        }
+    }
+
+    public static boolean checkForNullArray(double[] array) {
 
         if(array != null) {
 
